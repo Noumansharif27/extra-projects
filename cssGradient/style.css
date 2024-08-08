@@ -8,40 +8,34 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background-color: #dadada;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-button {
-  min-height: 4rem;
-  min-width: 15rem;
-  /* background: linear-gradient(to right, #6666f0, #ee7373); */
-  border-radius: 12rem;
-  font-size: 1.2rem;
-  border: none;
-  /* border: 1px solid linear-gradient(to right, #6666f0, #ee7373); */
+p {
+  padding: 5rem 3.5rem;
+  width: 25%;
   position: relative;
-  z-index: 2;
-  background-color: #fff;
-  overflow: hidden;
+  background-color: #dadada;
+  /* z-index: 2; */
+  border-radius: 15px;
 }
 
-button::after {
+p::before {
   content: "";
-  height: 4.1rem;
-  width: 15.1rem;
+  width: 104%;
+  height: 104%;
+  background: linear-gradient(to right, #2681f8, #e85656 50%, #6cee6c);
   position: absolute;
-  /* top: 0;
-  left: 0; */
-  border-radius: 12rem;
-  background: linear-gradient(to right, #6666f0, #ee7373);
-  z-index: -1;
-  /* background-color: transparent; */
-  /* border: 1px solid linear-gradient(to right, #6666f0, #ee7373); */
+  top: 0;
+  left: 0;
+  transform: translate(-2%, -2%);
+  z-index: -5;
+  border-radius: 15px;
 }
 
-button:hover {
+p:hover {
+  background: linear-gradient(to right, #2681f8, #e85656, #6cee6c);
   color: #fff;
 }
