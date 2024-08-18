@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Morfizam</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn-1">Receive</button>
+      <button class="btn-2">Reject</button>
+    </div>
+
+    <button class="toogle-btn">Dark</button>
+
+    <script>
+      let toogleBtn = document.querySelector(".toogle-btn");
+      let body = document.querySelector("body");
+      toogleBtn.addEventListener("click", function () {
+        body.classList.toggle("dark-mode");
+        // change toogle button text to light whe we are in lght mode
+        if (body.classList.contains("dark-mode")) {
+          toogleBtn.innerHTML = "Light";
+        } else {
+          toogleBtn.innerHTML = "Dark";
+        }
+      });
+    </script>
+  </body>
+</html>
