@@ -41,7 +41,7 @@ button {
     -10px -10px 10px -1px var(--btn-bg-top-color);
 }
 
-.container button:hover {
+.container button:active {
   box-shadow: inset 10px 10px 10px -1px var(--btn-bg-bottom-color),
     inset -10px -10px 10px -1px var(--btn-bg-top-color);
 }
